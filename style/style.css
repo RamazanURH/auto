@@ -1,0 +1,83 @@
+body {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1E1B1B;
+}
+
+
+.container {
+  max-width: 1290px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.header__logo {
+  margin-top: 30px;
+}
+
+.header__navbar {
+  display: flex;
+}
+
+.navbar__menu {
+  margin-top: 30px;
+}
+
+.btn__item {
+  display: inline-block;
+  margin-right: 40px;
+  line-height: 28px;
+  transform: scale(1);
+  transition: all .3s;
+}
+
+.btn__item:hover {
+  transform: scale(1.1);
+}
+
+.navbar__slash{
+  border: 1px solid #939191;
+  width: 0px;
+  height: 42px;
+  margin-top: 24px;
+}
+
+.navbar__contacts {
+  margin-left: 85px;
+  margin-top: 18px;
+  transform: scale(1);
+  position: relative;
+  transition: all .3s;
+}
+.navbar__contacts:hover {
+  transform: scale(1.1);
+}
+
+.navbar__contacts::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -55px;
+  background: url(../image/icon/call-Icon.svg) 0 0 / 100% 100% no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.contacts__user {
+  font-weight: 500;
+  line-height: 24px;
+  opacity: 0.7;
+}
+
+.contacts__tel {
+  font-size: 18px;
+  line-height: 32px;
+}
+/* -------------------- */
