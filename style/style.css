@@ -25,6 +25,7 @@ body {
 .button:hover {
   transform: scale(1.1);
 }
+
 /* =========================HEADER========================== */
 
 .header {
@@ -577,7 +578,82 @@ body {
 
 .accordion {
   background-color: #E2E6E9;
-  padding: 1px 0;
+  padding: 128px 0;
+}
+
+.accordion__inner {}
+
+.accordion__tittle {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 86px;
+}
+
+.accordion__body {
+  max-width: 890px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.accordion__content {
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px 1px #969696;
+  margin-bottom: 12px;
+  padding: 41px 40px 40px 40px;
+}
+
+.accordion__content:last-child {
+  margin-bottom: 0;
+}
+
+.accordion__content-tittle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion__content-tittle::after {
+  position: absolute;
+  content: "\FF0B";
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  right: 0;
+  width: 51px;
+  height: 48px;
+  background-color: #FF6433;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  border-radius: 3px;
+  transition: transform .3s;
+}
+.accordion__content-tittle:hover::after {
+  transform: translateY(-50%) scale(1.05);
+}
+
+.accordion__content-text {
+  margin-top: 15px;
+  max-width: 700px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #939191;
+}
+
+.accordion__hidden {
+  display: none;
 }
 
 /* =======================CONTACTS========================== */
@@ -707,6 +783,7 @@ body {
 .footer__img {
   margin-right: 23px;
 }
+
 .footer__img:last-child {
   margin-right: 0;
 }
@@ -733,8 +810,7 @@ body {
   padding: 64px 0 66px;
 }
 
-.footer__inner-bottom {
-}
+.footer__inner-bottom {}
 
 .footer__bottom-content {
   display: flex;
@@ -758,6 +834,7 @@ body {
   transform: scale(1);
   transition: all .3s;
 }
+
 .footer__btn-item:hover {
   transform: scale(1.1);
 }
